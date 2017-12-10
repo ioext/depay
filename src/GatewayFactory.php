@@ -3,7 +3,7 @@
 namespace dekuan\depay;
 
 use dekuan\delib\CLib;
-use Guzzle\Http\ClientInterface;
+use GuzzleHttp\ClientInterface;
 use Symfony\Component\HttpFoundation\Request as HttpRequest;
 
 use dekuan\depay\Exception\RuntimeException;
