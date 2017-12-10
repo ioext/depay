@@ -49,7 +49,7 @@ namespace dekuan\depay;
  *
  *	@see \dekuan\depay\GatewayFactory
  */
-class CDePay
+class DePay
 {
 	/**
 	 *	Internal factory storage
