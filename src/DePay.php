@@ -4,7 +4,50 @@ namespace dekuan\depay;
 
 
 /**
- *     DePay
+ *	DePay class
+ *
+ *	Provides static access to the gateway factory methods.  This is the
+ *	recommended route for creation and establishment of payment gateway
+ *	objects via the standard GatewayFactory.
+ *
+ *	Example:
+ *
+ *	<code>
+ *	//	Create a gateway for the PayPal ExpressGateway
+ *	//	(routes to GatewayFactory::create)
+ *	$gateway = DePay::create('ExpressGateway');
+ *
+ *	//	Initialise the gateway
+ *	$gateway->initialize(...);
+ *
+ *	//	Get the gateway parameters.
+ *	$parameters = $gateway->getParameters();
+ *
+ *	//	Create a credit card object
+ *	$card = new CreditCard(...);
+ *
+ *	//	Do an authorisation transaction on the gateway
+ *	if ( $gateway->supportsAuthorize() )
+ *	{
+ *		$gateway->authorize(...);
+ *	}
+ *	else
+ *	{
+ *		throw new \Exception('Gateway does not support authorize()');
+ *	}
+ *	</code>
+ *
+ *
+ *	@method static array  all()
+ *	@method static array  replace(array $gateways)
+ *	@method static string register(string $className)
+ *	@method static array  find()
+ *	@method static array  getSupportedGateways()
+ *	@codingStandardsIgnoreStart
+ *	@method static \dekuan\depay\GatewayInterface create(string $class, \GuzzleHttp\ClientInterface $httpClient = null, \Symfony\Component\HttpFoundation\Request $httpRequest = null)
+ *	@codingStandardsIgnoreEnd
+ *
+ *	@see \dekuan\depay\GatewayFactory
  */
 class DePay
 {
