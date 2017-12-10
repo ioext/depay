@@ -337,7 +337,6 @@ abstract class AbstractGateway implements GatewayInterface
 	protected function getDefaultHttpClient()
 	{
         	return new HttpClient(
-			'',
 			[
 				'curl.options' => array(CURLOPT_CONNECTTIMEOUT => 60),
 			]

@@ -26,7 +26,7 @@ use dekuan\depay\Exception\RuntimeException;
  *		$gateway = DePay::create( 'ExpressGateway' );
  *	</code>
  *
- *	@see \dekuan\depay\CDePay
+ *	@see \dekuan\depay\DePay
  */
 class GatewayFactory
 {
