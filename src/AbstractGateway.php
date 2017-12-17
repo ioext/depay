@@ -51,7 +51,7 @@ abstract class AbstractGateway implements GatewayInterface
 	protected $parameters;
 
 	/**
-	 *	@var \Guzzle\Http\ClientInterface
+	 *	@var \GuzzleHttp\ClientInterface
 	 */
 	protected $httpClient;
 
@@ -318,10 +318,10 @@ abstract class AbstractGateway implements GatewayInterface
 	 *	$myRequest = $gw->myRequest( $someParameters );
 	 *	</code>
 	 *
-	 *	@see \Omnipay\Common\Message\AbstractRequest
+	 *	@see \dekuan\depay\Message\AbstractRequest
 	 *	@param string $sFullClassName	The request class name
 	 *	@param array $arrParameters
-	 *	@return \Omnipay\Common\Message\AbstractRequest
+	 *	@return \dekuan\depay\Message\AbstractRequest
 	 */
 	protected function createRequest( $sFullClassName, array $arrParameters )
 	{

@@ -1,13 +1,16 @@
 <?php
+
 namespace dekuan\depay;
+
 
 use InvalidArgumentException;
 
+
 /**
- * Helper class
+ *	Helper class
  *
- * This class defines various static utility functions that are in use
- * throughout the Omnipay system.
+ *	This class defines various static utility functions that are in use
+ *	throughout the Omnipay system.
  */
 class Helper
 {
