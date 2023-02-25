@@ -1,6 +1,6 @@
 <?php
 
-namespace dekuan\depay;
+namespace ioext\depay;
 
 
 /**
@@ -44,10 +44,10 @@ namespace dekuan\depay;
  *	@method static array  find()
  *	@method static array  getSupportedGateways()
  *	@codingStandardsIgnoreStart
- *	@method static \dekuan\depay\GatewayInterface create(string $class, \GuzzleHttp\ClientInterface $httpClient = null, \Symfony\Component\HttpFoundation\Request $httpRequest = null)
+ *	@method static \ioext\depay\GatewayInterface create(string $class, \GuzzleHttp\ClientInterface $httpClient = null, \Symfony\Component\HttpFoundation\Request $httpRequest = null)
  *	@codingStandardsIgnoreEnd
  *
- *	@see \dekuan\depay\GatewayFactory
+ *	@see \ioext\depay\GatewayFactory
  */
 class DePay
 {

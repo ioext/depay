@@ -3,7 +3,7 @@
 require_once dirname( __DIR__ ) . '/src/CEnv.php';
 require_once dirname( __DIR__ ) . '/src/CLib.php';
 
-use dekuan\delib;
+use ioext\delib;
 
 
 /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace dekuan\depay\Exception;
+namespace ioext\depay\Exception;
 
 /**
  *	Bad Method Call Exception

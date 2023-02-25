@@ -1,6 +1,6 @@
 <?php
 
-namespace dekuan\depay;
+namespace ioext\depay;
 
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Client as HttpClient;

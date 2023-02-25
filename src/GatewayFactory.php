@@ -1,12 +1,12 @@
 <?php
 
-namespace dekuan\depay;
+namespace ioext\depay;
 
-use dekuan\delib\CLib;
+use ioext\delib\CLib;
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\HttpFoundation\Request as HttpRequest;
 
-use dekuan\depay\Exception\RuntimeException;
+use ioext\depay\Exception\RuntimeException;
 
 
 /**
@@ -26,7 +26,7 @@ use dekuan\depay\Exception\RuntimeException;
  *		$gateway = DePay::create( 'ExpressGateway' );
  *	</code>
  *
- *	@see \dekuan\depay\DePay
+ *	@see \ioext\depay\DePay
  */
 class GatewayFactory
 {

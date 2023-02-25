@@ -1,5 +1,5 @@
 <?php
-namespace dekuan\depay;
+namespace ioext\depay;
 
 use InvalidArgumentException;
 
@@ -95,7 +95,7 @@ class Helper
 	 */
 	public static function getGatewayShortName( $sClassName )
 	{
-		$sSearch	= "\\dekuan\\depay\\";
+		$sSearch	= "\\ioext\\depay\\";
 		$nSearchLen	= strlen( $sSearch );
 		if ( 0 === strpos( $sClassName, $sSearch ) )
 		{
@@ -113,13 +113,13 @@ class Helper
 	*	Resolve a short gateway name to a full namespaced gateway class.
 	*
 	*	Class names beginning with a namespace marker (\) are left intact.
-	*	Non-namespaced classes are expected to be in the \dekuan\depay\ namespace, e.g.:
+	*	Non-namespaced classes are expected to be in the \ioext\depay\ namespace, e.g.:
 	*
 	*	\Custom\Gateway		=> \Custom\Gateway
 	*	\Custom_Gateway		=> \Custom\Gateway
-	*	WeChatPay		=> \dekuan\depay\WeChatPay\Gateway
-	*	PayPal\Express		=> \dekuan\depay\PayPal\Express\Gateway
-	*	PayPal_Express		=> \dekuan\depay\PayPal\Express\Gateway
+	*	WeChatPay		=> \ioext\depay\WeChatPay\Gateway
+	*	PayPal\Express		=> \ioext\depay\PayPal\Express\Gateway
+	*	PayPal_Express		=> \ioext\depay\PayPal\Express\Gateway
 	*
 	*	@param  string	$sShortName	The short gateway name
 	*	@return string		The fully gateway class name with namespace
@@ -136,7 +136,7 @@ class Helper
 		$sShortName	= str_replace( '_', '\\', $sShortName );
 		$sShortName	= rtrim( $sShortName, "\\" );
 
-		return "\\dekuan\\depay\\" . $sShortName . "\\Gateway";
+		return "\\ioext\\depay\\" . $sShortName . "\\Gateway";
 	}
 
 

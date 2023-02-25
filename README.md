@@ -1,2 +1,2 @@
 # depay
-DePay Gateway base library by DeKuan, Inc.
+DePay Gateway base library by ioext, Inc.
